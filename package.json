@@ -1,0 +1,28 @@
+{
+  "name": "football-stats",
+  "version": "1.0.0",
+  "description": "Football Stats",
+  "main": "resources/js/custom.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "start": "wp-scripts start",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^13.0.3"
+  },
+  "exports": {
+    "./": "./resources/js/"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6"
+  }
+}

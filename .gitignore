@@ -1,0 +1,12 @@
+# /themes/mytheme/
+vendor*
+
+node_modules*
+
+dist/
+assets/
+
+ehthumbs.db
+Thumbs.db
+package-lock.json
+resources/images/sprite*.*

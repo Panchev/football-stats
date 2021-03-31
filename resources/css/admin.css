@@ -1,0 +1,13 @@
+.admin-leagues {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+
+.admin-leagues .admin-leagues-left-menu {
+	width: 25%;
+}
+
+.admin-leagues .admin-leagues-main-content {
+	width: 75%
+}

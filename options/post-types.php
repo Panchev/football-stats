@@ -1,0 +1,85 @@
+<?php
+register_post_type( 'crb_football_player', array(
+	'labels' => array(
+		'name' => __( 'Football Players', 'crb' ),
+		'singular_name' => __( 'Football Player', 'crb' ),
+		'add_new' => __( 'Add New', 'crb' ),
+		'add_new_item' => __( 'Add new Football Player', 'crb' ),
+		'view_item' => __( 'View Football Player', 'crb' ),
+		'edit_item' => __( 'Edit Football Player', 'crb' ),
+		'new_item' => __( 'New Football Player', 'crb' ),
+		'view_item' => __( 'View Football Player', 'crb' ),
+		'search_items' => __( 'Search Football Players', 'crb' ),
+		'not_found' =>  __( 'No Football Players found', 'crb' ),
+		'not_found_in_trash' => __( 'No Football Players found in trash', 'crb' ),
+	),
+	'public' => true,
+	'exclude_from_search' => false,
+	'show_ui' => true,
+	'capability_type' => 'post',
+	'hierarchical' => false,
+	'_edit_link' => 'post.php?post=%d',
+	'rewrite' => array(
+		'slug' => 'football-player',
+		'with_front' => false,
+	),
+	'query_var' => true,
+	'supports' => array( 'title' ),
+) );
+
+register_post_type( 'crb_football_match', array(
+	'labels' => array(
+		'name' => __( 'Matches', 'crb' ),
+		'singular_name' => __( 'Match', 'crb' ),
+		'add_new' => __( 'Add New', 'crb' ),
+		'add_new_item' => __( 'Add new Match', 'crb' ),
+		'view_item' => __( 'View Match', 'crb' ),
+		'edit_item' => __( 'Edit Match', 'crb' ),
+		'new_item' => __( 'New Match', 'crb' ),
+		'view_item' => __( 'View Match', 'crb' ),
+		'search_items' => __( 'Search Matches', 'crb' ),
+		'not_found' =>  __( 'No Matches found', 'crb' ),
+		'not_found_in_trash' => __( 'No Matches found in trash', 'crb' ),
+	),
+	'public' => true,
+	'exclude_from_search' => false,
+	'show_ui' => true,
+	'capability_type' => 'post',
+	'hierarchical' => false,
+	'_edit_link' => 'post.php?post=%d',
+	'rewrite' => array(
+		'slug' => 'match',
+		'with_front' => false,
+	),
+	'query_var' => true,
+	'supports' => array( 'title', 'page-attributes' ),
+) );
+
+register_post_type( 'crb_football_team', array(
+	'labels' => array(
+		'name' => __( 'Teams', 'crb' ),
+		'singular_name' => __( 'Team', 'crb' ),
+		'add_new' => __( 'Add New', 'crb' ),
+		'add_new_item' => __( 'Add new Team', 'crb' ),
+		'view_item' => __( 'View Team', 'crb' ),
+		'edit_item' => __( 'Edit Team', 'crb' ),
+		'new_item' => __( 'New Team', 'crb' ),
+		'view_item' => __( 'View Team', 'crb' ),
+		'search_items' => __( 'Search Teams', 'crb' ),
+		'not_found' =>  __( 'No Teams found', 'crb' ),
+		'not_found_in_trash' => __( 'No Teams found in trash', 'crb' ),
+	),
+	'public' => true,
+	'exclude_from_search' => false,
+	'show_ui' => true,
+	'capability_type' => 'post',
+	'hierarchical' => false,
+	'_edit_link' => 'post.php?post=%d',
+	'rewrite' => array(
+		'slug' => 'team',
+		'with_front' => false,
+	),
+	'query_var' => true,
+	'supports' => array( 'title', 'page-attributes' ),
+) );
+
